@@ -27,6 +27,23 @@ server.route({
   },
 });
 
+// 轉址
+server.route({
+  method: "GET",
+  path: "/back",
+  handler: (r, h) => {
+    return h.redirect("/");
+  },
+});
+
+server.route({
+  method: "GET",
+  path: "/{any*}",
+  handler: (r, h) => {
+    return "<><h1>You Lost!<h1></>";
+  },
+});
+
 server.route({
   method: "GET",
   path: "/hello/{user?}",
