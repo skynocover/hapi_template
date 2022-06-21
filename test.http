@@ -1,0 +1,21 @@
+@url=http://localhost:3000
+
+################################
+GET {{url}}
+
+################################
+GET {{url}}/hello/Foo?name=bar
+
+################################
+GET {{url}}/qs?foo[bar]=baz
+
+################################
+POST {{url}}/signup
+Content-Type: application/json
+
+{
+    "username":"DEF"
+}
+
+################################
+GET {{url}}/add

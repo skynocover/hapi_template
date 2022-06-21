@@ -1,0 +1,17 @@
+{
+  "name": "hapi_template",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon index.mjs"
+  },
+  "repository": "https://github.com/skynocover/hapi_template.git",
+  "author": "EricWu <skynocover@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "qs": "^6.10.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
